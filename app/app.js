@@ -123,6 +123,6 @@ const db = require("./config/db")
     app.use("/usuarios", usuarios)
 
 
-const PORT = process.env.PORT || 8080;
+// const PORT = process.env.PORT || 8080;
 
-app.listen(PORT, () =>{console.log("Servidor rodando")});
+app.listen(db.port, () =>{console.log("Servidor rodando")});
